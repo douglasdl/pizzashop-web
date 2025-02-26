@@ -1,7 +1,7 @@
 import { api } from "@/lib/axios";
 // import { supabase } from "@/lib/supabaseClient";
 
-interface GetManagedRestaurantResponse {
+export interface GetManagedRestaurantResponse {
   id: string
   name: string
   createdAt: Date | null

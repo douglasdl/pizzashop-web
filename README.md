@@ -127,6 +127,18 @@ Run the migrations:
 bun migrate
 ```
 
+Seed the database:
+```sh
+bun seed
+```
+
+Start the API project:
+```sh
+bun dev
+```
+
+
+
 ## Docker
 
 Run the Docker for the backend API:

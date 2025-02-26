@@ -7,6 +7,7 @@ import { z } from 'zod'
 import { toast } from 'sonner'
 import { Link, useNavigate } from 'react-router-dom'
 import { useMutation } from '@tanstack/react-query'
+import { registerRestaurant } from '@/api/register-restaurant'
 
 const signUpForm = z.object({
   restaurantName: z.string(),
@@ -33,7 +34,7 @@ export function SignUp() {
         email: data.email,
         phone: data.phone,
       })
-      
+
       toast.success('Restaurante cadastrado com sucesso!', {
         action: {
           label: 'Login',
@@ -43,9 +44,9 @@ export function SignUp() {
     } catch (error) {
       toast.error('Erro ao cadastrar restaurante!')
     }
-    
-  } 
-  
+
+  }
+
   return (
     <>
       <Helmet title='Cadastro' />
@@ -66,24 +67,24 @@ export function SignUp() {
               <Label htmlFor='restaurantName'>Nome do estabelecimento</Label>
               <Input id='restaurantName' type='text' {...register('restaurantName')} />
             </div>
-            
+
             <div className='space-y-2'>
               <Label htmlFor='managerName'>Seu nome</Label>
               <Input id='managerName' type='text' {...register('managerName')} />
             </div>
-            
+
             <div className='space-y-2'>
               <Label htmlFor='email'>Seu e-mail</Label>
               <Input id='email' type='email' {...register('email')} />
             </div>
-            
+
             <div className='space-y-2'>
               <Label htmlFor='phone'>Seu celular</Label>
               <Input id='phone' type='tel' {...register('phone')} />
             </div>
 
-            <Button 
-              type='submit' 
+            <Button
+              type='submit'
               className='w-full'
               disabled={isSubmitting}
             >
