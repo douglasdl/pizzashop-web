@@ -15,6 +15,7 @@ npm i @types/node -D
 npm i eslint @rocketseat/eslint-config -D
 npm i prettier-plugin-tailwindcss -D
 npm i eslint-plugin-simple-import-sort -D
+npm i @biomejs/biome -D
 npm i react-router-dom localforage match-sorter sort-by
 npm i react-helmet-async
 npm i react-hook-form zod @hookform/resolvers
@@ -34,6 +35,7 @@ pnpm i @types/node -D
 pnpm i eslint @rocketseat/eslint-config -D
 pnpm i prettier-plugin-tailwindcss -D
 pnpm i eslint-plugin-simple-import-sort -D
+pnpm i @biomejs/biome -D
 pnpm i react-router-dom localforage match-sorter sort-by
 pnpm i react-helmet-async
 pnpm i react-hook-form zod @hookform/resolvers
@@ -65,6 +67,8 @@ npx shadcn-ui@latest add table
 npx shadcn-ui@latest add select
 npx shadcn-ui@latest add dialog
 npx shadcn-ui@latest add card
+npx shadcn-ui@latest add skeleton
+npx shadcn-ui@latest add textarea
 ```
 
 Install the needed components from Shadcn (pnpm):
@@ -78,6 +82,8 @@ pnpm dlx shadcn@latest add table
 pnpm dlx shadcn@latest add select
 pnpm dlx shadcn@latest add dialog
 pnpm dlx shadcn@latest add card
+pnpm dlx shadcn@latest add skeleton
+pnpm dlx shadcn@latest add textarea
 ```
 
 Start the project:
