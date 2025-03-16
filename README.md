@@ -44,6 +44,7 @@ pnpm i recharts
 pnpm i axios
 pnpm i @supabase/supabase-js
 pnpm i @tanstack/react-query
+pnpm i date-fns
 ```
 
 Init the Shadcn (npm):
