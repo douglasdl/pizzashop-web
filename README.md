@@ -70,6 +70,8 @@ npx shadcn-ui@latest add dialog
 npx shadcn-ui@latest add card
 npx shadcn-ui@latest add skeleton
 npx shadcn-ui@latest add textarea
+npx shadcn-ui@latest add calendar
+npx shadcn-ui@latest add popover
 ```
 
 Install the needed components from Shadcn (pnpm):
@@ -85,6 +87,8 @@ pnpm dlx shadcn@latest add dialog
 pnpm dlx shadcn@latest add card
 pnpm dlx shadcn@latest add skeleton
 pnpm dlx shadcn@latest add textarea
+pnpm dlx shadcn@latest add calendar
+pnpm dlx shadcn@latest add popover
 ```
 
 Start the project:
