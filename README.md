@@ -24,6 +24,11 @@ npm i recharts
 npm i axios
 npm i @supabase/supabase-js
 npm i @tanstack/react-query
+npm i date-fns
+npm add -D vitest
+npm i -D @testing-library/react @testing-library/dom @types/react @types/react-dom
+npm i -D @testing-library/jest-dom
+npm i -D happy-dom
 ```
 
 Install the dependencies (pnpm):
@@ -45,6 +50,10 @@ pnpm i axios
 pnpm i @supabase/supabase-js
 pnpm i @tanstack/react-query
 pnpm i date-fns
+pnpm add -D vitest
+pnpm i -D @testing-library/react @testing-library/dom @types/react @types/react-dom
+pnpm i -D @testing-library/jest-dom
+pnpm i -D happy-dom
 ```
 
 Init the Shadcn (npm):
@@ -110,6 +119,9 @@ npm run dev
 - [Lucide React Icons](https://lucide.dev/icons/)
 - [Bun](https://bun.sh/)
 - Docker
+- [Vitest](https://vitest.dev/)
+- [Testing Library](https://testing-library.com/)
+- [Happy DOM](https://github.com/capricorn86/happy-dom) or [JSDOM](https://github.com/jsdom/jsdom)
 
 
 ## VS Code Extensions
