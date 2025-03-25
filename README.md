@@ -29,6 +29,7 @@ npm add -D vitest
 npm i -D @testing-library/react @testing-library/dom @types/react @types/react-dom
 npm i -D @testing-library/jest-dom
 npm i -D happy-dom
+npm i -D @testing-library/user-event
 ```
 
 Install the dependencies (pnpm):
@@ -54,6 +55,7 @@ pnpm add -D vitest
 pnpm i -D @testing-library/react @testing-library/dom @types/react @types/react-dom
 pnpm i -D @testing-library/jest-dom
 pnpm i -D happy-dom
+pnpm i -D @testing-library/user-event
 ```
 
 Init the Shadcn (npm):
