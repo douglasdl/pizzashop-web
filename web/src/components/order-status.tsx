@@ -7,8 +7,8 @@ interface OrderStatusProps {
 const orderStatusMap: Record<OrderStatus, string> = {
   pending: 'Pendente',
   canceled: 'Cancelado',
-  delivered: 'Entregue',
   delivering: 'Em entrega',
+  delivered: 'Entregue',
   processing: 'Em preparo'
 }
 
@@ -19,7 +19,7 @@ export function OrderStatus({ status }: OrderStatusProps) {
     : status === 'processing' ? 'bg-amber-500' : 'bg-amber-500'
   return (
     <div className="flex items-center gap-2">
-      <span className={`h-2 w-2 rounded-full ${statusColor}`} />
+      <span data-testid="badge" className={`h-2 w-2 rounded-full ${statusColor}`} />
       <span className="font-medium text-muted-foreground">{orderStatusMap[status]}</span>
     </div>
   )
