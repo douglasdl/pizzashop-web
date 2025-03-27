@@ -30,6 +30,7 @@ npm i -D @testing-library/react @testing-library/dom @types/react @types/react-d
 npm i -D @testing-library/jest-dom
 npm i -D happy-dom
 npm i -D @testing-library/user-event
+npm i -D msw
 ```
 
 Install the dependencies (pnpm):
@@ -56,6 +57,7 @@ pnpm i -D @testing-library/react @testing-library/dom @types/react @types/react-
 pnpm i -D @testing-library/jest-dom
 pnpm i -D happy-dom
 pnpm i -D @testing-library/user-event
+pnpm i -D msw
 ```
 
 Init the Shadcn (npm):
@@ -124,6 +126,8 @@ npm run dev
 - [Vitest](https://vitest.dev/)
 - [Testing Library](https://testing-library.com/)
 - [Happy DOM](https://github.com/capricorn86/happy-dom) or [JSDOM](https://github.com/jsdom/jsdom)
+- [MSW](https://mswjs.io): Mock Service Worker.
+- [Mirage.js](https://miragejs.com) - Alternatine to MSW.
 
 
 ## VS Code Extensions
@@ -178,4 +182,11 @@ docker ps -a
 Check the container logs:
 ```sh
 docker logs <Container ID>
+```
+
+## Mock with MSW
+
+Init
+```sh
+pnpm msw init public
 ```
