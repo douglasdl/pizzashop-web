@@ -1,7 +1,7 @@
 import { api } from "@/lib/axios";
 // import { supabase } from "@/lib/supabaseClient";
 
-interface GetProfileResponse {
+export interface GetProfileResponse {
   id: string
   name: string
   email: string
