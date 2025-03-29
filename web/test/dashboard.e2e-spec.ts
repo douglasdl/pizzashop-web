@@ -7,7 +7,7 @@ test('display day orders amount metric', async ({ page }) => {
   
   expect(dayOrdersAmount?.trim()).toBe('20');
 
-  expect(page.getByText('-5% em relação a ontem')).toBeVisible()
+  await expect(page.getByText('-5% em relação a ontem')).toBeVisible()
 
   // await page.waitForTimeout(2000);
 });
@@ -19,7 +19,7 @@ test('display month orders amount metric', async ({ page }) => {
   
   expect(monthOrdersAmount?.trim()).toBe('200');
 
-  expect(page.getByText('+7% em relação ao mês passado')).toBeVisible()
+  await expect(page.getByText('+7% em relação ao mês passado')).toBeVisible()
 
   // await page.waitForTimeout(2000);
 });
@@ -31,7 +31,7 @@ test('display month canceled orders amount metric', async ({ page }) => {
   
   expect(monthCanceledOrdersAmount?.trim()).toBe('5');
 
-  expect(page.getByText('-5% em relação ao mês passado')).toBeVisible()
+  await expect(page.getByText('-5% em relação ao mês passado')).toBeVisible()
 
   // await page.waitForTimeout(2000);
 });
@@ -44,7 +44,7 @@ test('display month revenue metric', async ({ page }) => {
   const normalizedRevenue = monthRevenue?.replace(/\u00A0/g, ' ').trim();
   expect(normalizedRevenue).toBe('R$ 200,00');
 
-  expect(page.getByText('+10% em relação ao mês passado')).toBeVisible()
+  await expect(page.getByText('+10% em relação ao mês passado')).toBeVisible()
 
   // await page.waitForTimeout(2000);
 });
