@@ -31,6 +31,7 @@ npm i -D @testing-library/jest-dom
 npm i -D happy-dom
 npm i -D @testing-library/user-event
 npm i -D msw
+npm init playwright@latest
 ```
 
 Install the dependencies (pnpm):
@@ -58,6 +59,7 @@ pnpm i -D @testing-library/jest-dom
 pnpm i -D happy-dom
 pnpm i -D @testing-library/user-event
 pnpm i -D msw
+pnpm create playwright
 ```
 
 Init the Shadcn (npm):
@@ -128,6 +130,8 @@ npm run dev
 - [Happy DOM](https://github.com/capricorn86/happy-dom) or [JSDOM](https://github.com/jsdom/jsdom)
 - [MSW](https://mswjs.io): Mock Service Worker.
 - [Mirage.js](https://miragejs.com) - Alternatine to MSW.
+- [PlayWright](https://playwright.dev): End-To-End Tests.
+- [Cypress](https://www.cypress.io): End-To-End Tests.
 
 
 ## VS Code Extensions
@@ -189,4 +193,21 @@ docker logs <Container ID>
 Init
 ```sh
 pnpm msw init public
+```
+
+## End-toEnd Tests with PlayWright
+
+Test
+```sh
+pnpm playwright test
+```
+
+Test (UI)
+```sh
+pnpm playwright test --ui
+```
+
+Report
+```sh
+pnpm exec playwright show-report
 ```
